@@ -56,7 +56,7 @@ add_dependencies(your_program ${catkin_EXPORTED_TARGETS})
 ```
 
 - ### C++ 
-If you are deploying ROS nodes in C++ which use sophia_msgs, you will also need to declare a dependency between your node and your message, as described in the[catkin documentation](http://docs.ros.org/kinetic/api/catkin/html/howto/format2/cpp_msg_dependencies.html).
+If you are deploying ROS nodes in C++ which use sophia_msgs, you will need to declare a dependency between your node and your message, as described in the [catkin documentation](http://docs.ros.org/kinetic/api/catkin/html/howto/format2/cpp_msg_dependencies.html).
 
 In your C++ node or library, add
 

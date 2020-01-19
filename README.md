@@ -44,7 +44,7 @@ If you are using the sophia_msgs in your package, remember to add to **package.x
 ```
 and in the **CMakeList.txt**:
 
-```bash
+```
 find_package(catkin REQUIRED COMPONENTS
   other_catkin_pkgs
   sophia_msgs
@@ -56,11 +56,13 @@ add_dependencies(your_program ${catkin_EXPORTED_TARGETS})
 ```
 
 - ### C++ 
-If you are building C++ nodes which use your new messages, you will also need to declare a dependency between your node and your message, as described in If you are building C++ nodes which use your new messages, you will also need to declare a dependency between your node and your message, as described in the [catkin documentation](http://docs.ros.org/kinetic/api/catkin/html/howto/format2/cpp_msg_dependencies.html).
+If you are deploying ROS nodes in C++ which use sophia_msgs, you will also need to declare a dependency between your node and your message, as described in the[catkin documentation](http://docs.ros.org/kinetic/api/catkin/html/howto/format2/cpp_msg_dependencies.html).
 
-Messages are put into a namespace that matches the name of the package. ie. 
-```
-#include <sophia_msgs/name-of-the-message.h>
+In your C++ node or library, add
+
+```code
+#include <sophia_msgs/name_of_the_message.h>
+#e.g. #include <sophia_msgs/example_1.h>
 ```
 
 - ### Python

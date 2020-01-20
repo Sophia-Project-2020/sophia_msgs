@@ -30,10 +30,10 @@ Username@Hostname:~$ catkin_make
 Document the new msgs, srvs and actions, by adding it in its own list:
 
   ### msg
-  - [example_1.msg](path_to_documentation)
+  - [example_1.msg](msg/example_1.msg)
   
   ### srv
-  - [example_2.srv](path_to_documentation)
+  - [example_2.srv](srv/example_2.srv)
   
   ### action
 

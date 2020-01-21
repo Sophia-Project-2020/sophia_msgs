@@ -21,12 +21,12 @@ Username@Hostname:~$ cd ~/your_catkin_ws/src
 Then, clone the repository with:
 
 ``` bash
-Username@Hostname:~$ git clone https://github.com/Sophia-Project-2020/sophia_msgs.git
+Username@Hostname:~/your_catkin_ws/src$ git clone https://github.com/Sophia-Project-2020/sophia_msgs.git
 ```
 Finally, compile:
 ``` bash
-Username@Hostname:~$ cd ~/catkin_ws 
-Username@Hostname:~$ catkin_make
+Username@Hostname:~/your_catkin_ws/src$ cd ~/your_catkin_ws 
+Username@Hostname:~/your_catkin_ws$ catkin_make
 ```
 
 ## Message Types

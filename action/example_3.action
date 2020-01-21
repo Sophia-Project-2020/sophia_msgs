@@ -1,0 +1,11 @@
+# Add action description here
+# This action contains...
+
+# Define the goal
+float32 target
+---
+# Define the result
+bool completed
+---
+# Define a feedback message
+float32 percent_complete

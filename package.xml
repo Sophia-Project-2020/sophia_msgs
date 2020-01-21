@@ -20,7 +20,8 @@
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
   <!-- Optional attribute type can be: website, bugtracker, or repository -->
   <!-- Example: -->
-  <!-- <url type="website">http://wiki.ros.org/sophia_msgs</url> -->
+  <url type="website">https://www.project-sophia.eu/</url>
+  <url type="website">https://github.com/Sophia-Project-2020/sophia_msgs</url>
 
 
   <!-- Author tags are optional, multiple are allowed, one per tag -->
@@ -62,6 +63,9 @@
   <exec_depend>message_runtime</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>std_msgs</exec_depend>
+  
+  <depend>actionlib</depend>
+  <depend>actionlib_msgs</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

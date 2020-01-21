@@ -4,6 +4,9 @@
 ## Table of Contents
 - [Download](#download)
 - [Message Types](#message-types)
+    - [msg](#msg)
+    - [srv](#srv)
+    - [action](#action)
 - [How to use the messages](#how-to-use-the-messages)
     - [C++](#c)
     - [Python](#python)
@@ -29,18 +32,25 @@ Username@Hostname:~$ catkin_make
 ## Message Types
 Document the new msgs, srvs and actions, by adding it in its own list:
 
-  ### msg
-  - [example_1.msg](msg/example_1.msg)
+  - ### msg
+    - [example_1.msg](msg/example_1.msg)
   
-  ### srv
-  - [example_2.srv](srv/example_2.srv)
+  - ### srv
+    - [example_2.srv](srv/example_2.srv)
   
-  ### action
+  - ### action
+    - [example_3.action](action/example_3.action)
 
 ## How to use the messages
 If you are using the sophia_msgs in your package, remember to add to **package.xml**:
+- if [format 2 of package.xml](http://wiki.ros.org/catkin/package.xml#Format_2_.28Recommended.29)
 ```
-<depend>sophia_msgs<depend>
+<depend>sophia_msgs</depend>
+```
+- otherwise
+```
+<build_depend>sophia_msgs</build_depend>
+<exec_depend>sophia_msgs</exec_depend>
 ```
 and in the **CMakeList.txt**:
 
